@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../imagenes/fondo.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: monospace;
+}
+
+header{
+    text-align: center;
+    color: yellow;
+    font-size: 25px;
+}
+
+.btn-container{
+    text-align: center;
+}
+
+.restart-btn{
+    color: #fbfbfb;
+    background-color: transparent;
+    border-radius: 12px;
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.restart-btn:hover{
+    cursor: pointer;
+    background-color: #00454a;
+    color: black;
+}
+
+.marcador{
+    margin: 10% auto 5%;
+    text-align: center;
+    color: yellow;
+    border: 3px solid white;
+    text-align: center;
+    width: 250px;
+    font-size: 60px;
+    padding: 30px 10px;
+    position: relative;
+}
+
+.badge{
+    background: #00454a;
+    font-size: 30px;
+    padding: 10px 10px;
+    border-radius: 12px;
+}
+
+#usuario-badge{
+    position: absolute;
+    top: 20px;
+    left: -80px;
+}
+
+#compu-badge{
+    position: absolute;
+    top: 20px;
+    right: -65px;
+}
+
+.opciones{
+    display: flex;
+    justify-content: center;
+}
+
+.opciones .opcione{
+    cursor: pointer;
+    border: 3px solid #00454a;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 40%;
+    margin-right: 20px;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.1s ease;
+}
+
+.opciones .opcione:hover{
+    cursor: pointer;
+    background: #00454a;
+}
+
+.opciones .opcione img{
+    width: 100px;
+}
+
+h2{
+    text-align: center;
+    color: yellow;
+    font-size: 25px;
+}
+
+/*-----Modal*/
+.text-win{
+    color: #289a28;
+    font-size: 40px;
+}
+
+.text-lose{
+    color: #ff0000;
+    font-size: 40px;
+}
+
+.modal-content p{
+    font-size: 18px;
+}
+
+.icofont-close{
+    color: red;
+    padding: 100%;
+}

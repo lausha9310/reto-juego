@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="assets/icofont/icofont.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <title>Juego</title>
+</head>
+<body>
+    <header>
+        <h1>Piedra - Papel - Tijeras</h1>
+    </header>
+    <div class="marcador">
+        <div id="usuario-badge" class="badge">Usuario</div>
+        <div id="compu-badge" class="badge">Compu</div>
+        <span id="usuario-score">0</span>:<span id="compu-score">0</span>
+    </div>
+    <div class="opciones">
+        <div id="piedra" class="opcione">
+            <img src="imagenes/img3.png" alt="">
+        </div>
+        <div id="papel" class="opcione">
+            <img src="imagenes/img1.png" alt="">
+        </div>
+        <div id="tijeras" class="opcione">
+            <img src="imagenes/img2.png" alt="">
+        </div>
+    </div>
+    <h2>Haz tu elección</h2>
+    <div class="btn-container">
+        <button id="restart" class="restart-btn">Reiniciar el juego</button>
+   </div>
+    <!--Modal-->
+    <div class="modal">
+        <div id="resultado" class="modal-content"></div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
