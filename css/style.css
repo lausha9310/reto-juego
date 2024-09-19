@@ -24,7 +24,7 @@ body {
     z-index: 2;
 }
 
-#flower-container {
+#flowercontainer {
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -38,24 +38,26 @@ body {
 
 .flower {
     position: absolute;
-    bottom: 0;
-    width: 100px; /* Tamaño de la flor */
-    height: 100px; /* Tamaño de la flor */
-    opacity: 0;
-    animation: rise 10s linear forwards;
+    bottom: -150px; /* Comienza fuera de la pantalla */
+    width: 100px;
+    height: 100px;
+    opacity: 0; /* Invisible al principio */
+    display: none; /* Ocultas inicialmente */
+    animation: riseUpAndDisappear 6s ease-in-out forwards; /* Animación para subir con suavidad y desvanecerse */
 }
 
-@keyframes rise {
+@keyframes riseUpAndDisappear {
     0% {
-        transform: translateY(100vh) scale(0.5);
-        opacity: 0;
+        transform: translateY(150px); /* Comienza 150px por debajo */
+        opacity: 0; /* Invisible */
     }
     50% {
-        opacity: 1;
+        transform: translateY(0); /* En su posición original */
+        opacity: 1; /* Completamente visible */
     }
     100% {
-        transform: translateY(-100vh) scale(1.5);
-        opacity: 0;
+        transform: translateY(-200px); /* Sube hacia arriba, fuera de la pantalla */
+        opacity: 0; /* Desaparece gradualmente */
     }
 }
 
