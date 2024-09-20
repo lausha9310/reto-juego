@@ -6,20 +6,25 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #FFF8DC; /* Fondo cálido y suave */
+    background-color: #f5f5f5;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(/reto-juego/imagenes/rosa05.jpg);  /* Fondo cálido y suave */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
     font-family: 'Cursive', sans-serif;
     flex-direction: column;
     text-align: center;
     position: relative;
-    height: auto;
 }
 
+
 #message {
-    color: #FFCC00; /* Color amarillo dorado */
+    color: #FFCC00;
     font-size: 2em;
     margin-bottom: 20px;
     max-width: 90%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Sombra al texto */
     position: relative;
     z-index: 2;
 }
@@ -38,7 +43,7 @@ body {
 
 .flower {
     position: absolute;
-    bottom: -150px; /* Comienza fuera de la pantalla */
+    bottom: -100px; /* Comienza fuera de la pantalla */
     width: 100px;
     height: 100px;
     opacity: 0; /* Invisible al principio */
@@ -76,8 +81,8 @@ button {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    max-width: 80%;
-    margin: auto;
+    position: relative;
+    z-index: 2; /* Se asegura que esté sobre las flores */
 }
 
 button:hover {
